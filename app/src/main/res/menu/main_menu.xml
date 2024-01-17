@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="User Profile" app:showAsAction="never"
+        android:id="@+id/menu_profile">
+    </item>
+    <item android:title="Sign Out" app:showAsAction="never"
+        android:id="@+id/menu_sign_out">
+    </item>
+    <item android:title="Patient" app:showAsAction="never"
+        android:id="@+id/menu_patient">
+    </item>
+    <item android:title="Doctor" app:showAsAction="never"
+        android:id="@+id/menu_doctor">
+    </item>
+    <item android:title="Video" app:showAsAction="never"
+        android:id="@+id/menu_video">
+    </item>
+    <item android:title="Call/SMS" app:showAsAction="never"
+        android:id="@+id/menu_callsms">
+    </item>
+    <item android:title="Chat" app:showAsAction="never"
+        android:id="@+id/menu_chat">
+    </item>
+</menu>

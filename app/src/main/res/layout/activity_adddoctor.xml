@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_adddoctor"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".AdddoctorActivity">
+<Button
+    android:id="@+id/button_choose_fimage"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Choose Doctor Photo"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.248"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.62" />
+
+<EditText
+    android:id="@+id/edit_text_file_fname"
+    android:layout_width="279dp"
+    android:layout_height="38dp"
+    android:layout_toEndOf="@id/button_choose_fimage"
+    android:hint="Enter doctor name"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.492"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.038" />
+
+<ImageView
+    android:id="@+id/image_fview"
+    android:layout_width="237dp"
+    android:layout_height="141dp"
+    android:layout_above="@id/progress_fbar"
+    android:layout_below="@id/edit_text_file_fname"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.31"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:src="@drawable/addpicture"
+    app:layout_constraintVertical_bias="0.835" />
+
+<ProgressBar
+    android:id="@+id/progress_fbar"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    android:layout_width="331dp"
+    android:layout_height="9dp"
+    android:layout_above="@id/buttonfAdd"
+    android:layout_alignParentStart="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.893" />
+
+<Button
+    android:id="@+id/buttonfAdd"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:text="Add Doctor"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.173"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.976" />
+
+<TextView
+    android:id="@+id/textViewShowfImage"
+    android:layout_width="128dp"
+    android:layout_height="36dp"
+    android:layout_alignBaseline="@+id/buttonfAdd"
+    android:layout_alignBottom="@id/buttonfAdd"
+    android:layout_toEndOf="@id/buttonfAdd"
+    android:gravity="center"
+    android:text="Show Doctor"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.826"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.961" />
+
+<EditText
+    android:id="@+id/editTextfAge"
+    android:layout_width="276dp"
+    android:layout_height="48dp"
+    android:ems="10"
+    android:hint="Age"
+    android:inputType="number"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.459"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.112" />
+
+<EditText
+    android:id="@+id/editTextfContactno"
+    android:layout_width="271dp"
+    android:layout_height="41dp"
+    android:ems="10"
+    android:hint="Contact No."
+    android:inputType="phone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.45"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.208" />
+
+<Spinner
+    android:id="@+id/spinnerfSubjects"
+    android:layout_width="211dp"
+    android:layout_height="33dp"
+    android:entries="@array/departments"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.33"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.287" />
+
+<RadioGroup
+    android:id="@+id/radioGroupf"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.232"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.368">
+
+    <RadioButton
+        android:id="@+id/radiofMale"
+        android:layout_width="140dp"
+        android:layout_height="26dp"
+        android:text="Male"
+        android:checked="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.376" />
+    <RadioButton
+        android:id="@+id/radiofFemale"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359" />
+</RadioGroup>
+
+<Button
+    android:id="@+id/buttonDateffrom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Get DOJ"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.182"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.452" />
+
+    <EditText
+        android:id="@+id/editTextfDoj"
+        android:layout_width="189dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="Date of Joining"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456" />
+
+<EditText
+    android:id="@+id/editTextfAddress"
+    android:layout_width="335dp"
+    android:layout_height="41dp"
+    android:ems="10"
+    android:hint="Address"
+    android:inputType="textPersonName"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.536" />
+</androidx.constraintlayout.widget.ConstraintLayout>

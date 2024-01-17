@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_managedoctor"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="20dp"
+android:background="@color/fui_bgFacebook"
+tools:context=".ManagedoctorActivity">
+
+    <TextView
+        android:id="@+id/textViewDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage Doctor"
+        android:textAlignment="center"
+        android:textColor="@color/colorOrange"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.152" />
+<Button
+    android:id="@+id/buttonAddDoctor"
+    android:layout_width="match_parent"
+    android:layout_height="53dp"
+    android:background="@drawable/rounded_dark_blue"
+    android:text="Add Doctor"
+    android:textColor="@android:color/background_light"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.324" />
+
+    <Button
+        android:id="@+id/buttonShowDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/rounded_dark_blue"
+        android:text="Show Doctor"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
+
+<Button
+    android:id="@+id/buttonUpdateDoctor"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@drawable/rounded_dark_blue"
+    android:text="Update Doctor"
+    android:textColor="@android:color/background_light"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.603" />
+
+<Button
+    android:id="@+id/chatButtonDoctor"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@drawable/rounded_dark_blue"
+    android:text="Chat"
+    android:textColor="@android:color/background_light"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.754" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

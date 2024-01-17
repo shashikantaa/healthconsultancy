@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Health Consultant</string>
+    <array name="departments">
+        <item>Medicine</item>
+        <item>Ortho</item>
+        <item>Gynae</item>
+        <item>Neurology</item>
+        <item>Padiatrics</item>
+        <item>Dermitology</item>
+        <item>Urology</item>
+    </array>
+    <array name="diseases">
+        <item>Fever</item>
+        <item>Diehorea</item>
+        <item>Chestpain</item>
+        <item>Abdomenpain</item>
+        <item>Headache</item>
+        <item>Skin</item>
+        <item>Eye</item>
+    </array>
+    <array name="noofvisits">
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+        <item>Fourth</item>
+        <item>Fifth</item>
+        <item>Sixth</item>
+        <item>Seventh</item>
+    </array>
+    <string name="title_activity_sendnotification">SendnotificationActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_addroletouser">AddroletouserActivity</string>
+    <string name="title_activity_showusers">ShowusersActivity</string>
+</resources>
